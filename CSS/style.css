@@ -1,0 +1,102 @@
+body {
+	background-color: #00ccff;
+}
+
+#content ul {
+	list-style-type: none;
+    overflow: hidden;
+    top: 0;
+	background-color: #ffffff;
+	position: fixed;
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+	left: 0;
+}
+
+#content li {   
+	float: left;
+}
+
+#content li a {
+    display: block;
+    color: #47525E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-family: Lato, Geneva, sans-serif;
+}
+
+#content ul a:hover, a:active { 
+    background-color: #00ccff;;
+	
+}
+
+#container {
+	position: relative; 
+	width: 800px; 
+	margin: 100px auto; 					
+	padding: 30px 20px 600px 20px;
+	background-color: white;
+	border-radius: 25px;
+
+}
+
+#container ul {
+	list-style-type: none;
+    overflow: hidden;
+	width: 200px;
+	margin: 150px 20px 20px 20px;
+	padding: 20px 20px 20px 20px;
+    background-color: #f1f1f1;
+	float: left;
+
+}
+
+#container li a {
+	text-decoration: none;
+	 padding: 10px 18px;
+	 display: block;
+	 color: black;
+	 font-family: Lato, Geneva, sans-serif;
+	 color: #47525E;
+}
+
+#container ul a:hover, a:active { 
+    background-color: #00ccff;;
+	
+}
+
+#container h2 {
+	width: 400px;
+	padding: 40px;
+	/*padding: 30px 150px;*/
+	background-color: #f1f1f1;
+	border-radius: 100px;
+	text-align: center;
+	float: right;
+	color: #47525E;
+
+}
+
+#container form {
+	
+	margin: 0px 120px 20px 20px;
+	padding: 20px 20px 20px 20px; 
+	float: right;
+
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+label {
+	font-family: Lato, Geneva, sans-serif;
+	 color: #47525E;
+}
