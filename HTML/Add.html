@@ -1,17 +1,23 @@
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="../CSS/Website.css">
-</head>
-<body>
-
-<ul>
-<li>Logo</li>
-<li>Home</li>
-<li>View Profile</li>
-<li>Category</li>
-<li>Settings</li>
-<li>Log Out</li>
-</ul>
-
-</body>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+		<script rel="javascript" type="text/javascript" src="../JS/JavaScripts.js"></script>
+	</head>
+	<body onload="load_Master()">
+		<div id="head">
+			
+		</div>
+		<div id="container">
+			<ul>
+				<li><a class="active" href="#newCategory" onclick="load_cCategory()">Create New Category</a></li>
+				<li><a href="#newQuestion" onclick="load_aQuestion()">Add New Questions</a></li>
+				<li><a href="#delCategory" onclick="load_dCategory()">Delete Category</a></li>
+				<li><a href="#delQuestion" onclick="load_dQuestion()">Delete Question</a></li>
+			</ul>
+			<div id="category">
+			
+			</div>
+		</div>
+		
+	</body>
 </html>
