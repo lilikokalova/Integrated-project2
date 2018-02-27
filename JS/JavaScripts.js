@@ -21,3 +21,14 @@ function load_dQuestion() {
 function load_Master() {
      document.getElementById("head").innerHTML='<object type="text/html" data="../HTML/Master.html" ></object>';
 }
+
+function myFunction(id) {
+	document.getElementById("q"+id).style.borderColor = "rgb(0,0,0)";
+	
+	for(i = 1; i<5; i++){	
+		if(i != id){
+			document.getElementById("q"+i).style.borderColor = "rgb(95,159,159)";	
+		}			
+	}
+	
+}
