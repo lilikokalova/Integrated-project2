@@ -28,12 +28,11 @@ body {
 }
 
 #content ul a:hover, a:active { 
-    background-color: #00ccff;;
+    background-color: #00ccff;
 	
 }
 
-#container {
-	/*position: relative;*/ 
+#container { 
 	width: 800px; 
 	margin: 100px auto; 					
 	padding: 30px 20px 600px 20px;
@@ -63,7 +62,7 @@ body {
 }
 
 #container ul a:hover, a:active { 
-    background-color: #00ccff;;
+    background-color: #00ccff;
 	
 }
 
@@ -87,6 +86,23 @@ body {
 
 }
 
+.active{
+	background-color:#00ccff;
+}
+
+.cAnswer1{
+	position: absolute;
+    width: 470px;
+	top:482.5px;
+}
+
+.cAnswer2{
+	position:absolute;
+	width: 470px;
+	top:558px;
+	
+}
+
 input {
     width: 100%;
     padding: 12px 20px;
@@ -99,57 +115,4 @@ input {
 label {
 	font-family: Lato, Geneva, sans-serif;
 	 color: #47525E;
-}
-
-body{
-	text-align: center;
-	background-color: #66CCCC;
-}
-
-p{
-	font-size: large;
-}
-
-div{
-	overflow: auto;	
-	width: 25%;
-	margin: 0 auto;
-
-}
-
-.option{
-	background-color: #5F9F9F;
-	user-select: none;
-	font-size: large;
-	padding : 3%;
-	border-style: solid;
-	border-width: medium;
-	border-color: #5F9F9F;
-}
-
-.option:hover{
-		background-color: #8FD8D8;
-}
-
-#q1{		
-	margin-left: 10%;
-	margin-top: 10%;
-	float:left;
-}
-
-#q2{
-	margin-left: 60%;
-	margin-top: 5%;
-}
-
-#q3{
-	margin-left: 10%;
-	margin-top: 15%;
-	float:left;
-	margin-bottom: 10%;
-}
-
-#q4{
-	margin-left: 60%;
-	margin-top: 10%;
 }
