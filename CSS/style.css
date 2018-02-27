@@ -146,6 +146,10 @@ div.questionPage{{
 .option:hover{
 		background-color: #8FD8D8;
 }
+	
+input.questionPage{
+	
+}
 
 #q1{		
 	margin-left: 10%;
