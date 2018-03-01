@@ -29,6 +29,7 @@ body {
 
 #content ul a:hover, a:active { 
     background-color: #00ccff;
+	color: white;
 	
 }
 
@@ -66,6 +67,7 @@ body {
 	
 }
 
+
 #container h2 {
 	width: 400px;
 	padding: 40px;
@@ -89,6 +91,7 @@ body {
 .active{
 	background-color:#00ccff;
 }
+
 
 .cAnswer1{
 	position: absolute;
