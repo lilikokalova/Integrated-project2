@@ -138,11 +138,11 @@ body.questionPage{
 	background-color: #66CCCC;
 }
 
-p.questionPage{{
+p.questionPage{
 	font-size: large;
 }
 
-div.questionPage{{
+div.questionPage{
 	overflow: auto;	
 	width: 25%;
 	margin: 0 auto;
