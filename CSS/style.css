@@ -139,22 +139,13 @@ h1.questionPage, p.questionPage{
 	text-align: center;
 }
 
-div.questionPage{
-	overflow: auto;	
-	width: 25%;
-	margin: 0 auto;
 
+
+.question{
+	
 }
 
-.option{
-	background-color: #5F9F9F;
-	user-select: none;
-	font-size: large;
-	padding : 3%;
-	border-style: solid;
-	border-width: medium;
-	border-color: #5F9F9F;
-}
+
 
 .option:hover{
 		background-color: #8FD8D8;
@@ -164,25 +155,37 @@ input.questionPage{
 	
 }
 
-#q1{		
-	margin-left: 10%;
-	margin-top: 10%;
-	float:left;
+table.questionPage{
+	user-select: none;
+	margin: 0 auto;
+	width: 50%;
+	height: 50%;
+	text-align: center;
 }
 
-#q2{
-	margin-left: 60%;
-	margin-top: 5%;
+td.questionPage{
+	
+	padding: 50px;
 }
 
-#q3{
-	margin-left: 10%;
-	margin-top: 15%;
-	float:left;
-	margin-bottom: 10%;
+div.option{
+
+	background-color: #5F9F9F;
+	font-size: large;
+	padding : 3%;
+	border-style: solid;
+	border-width: medium;
+	border-color: #5F9F9F;
+	height: 50px;
+	line-height: 50px;
+
+
+	
 }
 
-#q4{
-	margin-left: 60%;
-	margin-top: 10%;
-}
+
+
+
+
+
+
