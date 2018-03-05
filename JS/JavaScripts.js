@@ -22,6 +22,22 @@ function load_Master() {
      document.getElementById("head").innerHTML='<object type="text/html" data="../HTML/Master.html" ></object>';
 }
 
+window.onload = function onLoadCategory(){
+ var mycat = new Array();
+  mycat[0]='Maths';
+  mycat[1]='Science';
+  mycat[2]='Computing';
+  mycat[3]='History';
+  
+
+  var options = '';
+
+  for(var i = 0; i < mycat.length; i++)
+    options += '<option value="'+mycat[i]+'" />';
+
+  document.getElementById('Categories').innerHTML = options;
+}
+
 function myFunction(id) {
 	document.getElementById("q"+id).style.borderColor = "rgb(0,0,0)";
 	
