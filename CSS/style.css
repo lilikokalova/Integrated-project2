@@ -29,6 +29,7 @@ body {
 
 #content ul a:hover, a:active { 
     background-color: #00ccff;
+	color: white;
 	
 }
 
@@ -66,6 +67,7 @@ body {
 	
 }
 
+
 #container h2 {
 	width: 400px;
 	padding: 40px;
@@ -75,6 +77,19 @@ body {
 	text-align: center;
 	float: right;
 	color: #47525E;
+
+}
+
+#container h3 {
+	width: 200px;
+	padding: 40px;
+	/*padding: 30px 150px;*/
+	background-color: #f1f1f1;
+	border-radius: 100px;
+	text-align: center;
+	float: right;
+	color: #47525E;
+	margin-right: 12%;
 
 }
 
@@ -90,6 +105,7 @@ body {
 	background-color:#00ccff;
 }
 
+
 .cAnswer1{
 	position: absolute;
     width: 470px;
@@ -100,6 +116,7 @@ body {
 	position:absolute;
 	width: 470px;
 	top:558px;
+	
 }
 
 .cAnswer3{
@@ -120,4 +137,54 @@ input {
 label {
 	font-family: Lato, Geneva, sans-serif;
 	 color: #47525E;
+}
+
+
+h1.questionPage, p.questionPage{
+	font-size: large;
+	text-align: center;
+}
+
+
+
+.question{
+	
+}
+
+
+
+.option:hover{
+		background-color: #8FD8D8;
+}
+	
+input.questionPage{
+	
+}
+
+table.questionPage{
+	user-select: none;
+	margin: 0 auto;
+	width: 50%;
+	height: 50%;
+	text-align: center;
+}
+
+td.questionPage{
+	
+	padding: 50px;
+}
+
+div.option{
+
+	background-color: #5F9F9F;
+	font-size: large;
+	padding : 3%;
+	border-style: solid;
+	border-width: medium;
+	border-color: #5F9F9F;
+	height: 50px;
+	line-height: 50px;
+
+
+	
 }
