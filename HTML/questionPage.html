@@ -1,23 +1,46 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+<script rel="javascript" type="text/javascript" src="../JS/JavaScripts.js"></script>
 <meta charset="utf-8">
-<title>Question Page</title>
-<link rel="stylesheet" href="questionPageStyleSheet.css">
+<title class = "questionPage">Question Page</title>
 </head>
-<body>
-<h1>Question #</h1>
- 
-<p>Question</p>
+<body class = "questionPage" onload="load_Master()">
 
-<div>
-	<div class = "option" id="q1" onclick="myFunction(1)"> Answer 1 </div><br>
-	<div class = "option" id="q2" onclick="myFunction(2)"> Answer 2 </div><br>
-	<div class = "option" id="q3" onclick="myFunction(3)"> Answer 3 </div><br>
-	<div class = "option" id="q4" onclick="myFunction(4)"> Answer 4 </div><br>
+<div id="head">
+			
 </div>
+
+<h1 class = "questionPage">Question #1</h1>
+ 
+<p class = "questionPage">What is the population of Africa?</p>
+
+<table class = "questionPage">
+
+<div class = "question">
+	<tr class = "questionPage">
+		<td class = "questionPage">
+			<div class = "option" id="q1" onclick="myFunction(1)"> 1 billion </div><br>
+		</td>
+		<td class = "questionPage">
+			<div class = "option" id="q2" onclick="myFunction(2)"> 1.5 billion </div><br>
+		</td>
+	</tr>
+	<tr class = "questionPage">
+		<td class = "questionPage">
+			<div class = "option" id="q3" onclick="myFunction(3)"> 1.2 billion </div><br>
+		</td>
+		<td class = "questionPage">
+			<div class = "option" id="q4" onclick="myFunction(4)"> 2 billion </div><br>
+		</td>
+	</tr>
+</div>
+
+</table>
 	
-<input type="submit">
+	
+<input type="submit" class = "questionPage">
 
 </body>
 </html>
