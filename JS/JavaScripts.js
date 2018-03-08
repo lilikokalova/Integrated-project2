@@ -24,10 +24,10 @@ function load_Master() {
 
 window.onload = function onLoadCategory(){
  var mycat = new Array();
-  mycat[0]='Maths';
-  mycat[1]='Science';
-  mycat[2]='Computing';
-  mycat[3]='History';
+  mycat[0]='Africa';
+  mycat[1]='Asia';
+  mycat[2]='Europe';
+  mycat[3]='NorthAmericaAndSouthAmerica';
   
 
   var options = '';
