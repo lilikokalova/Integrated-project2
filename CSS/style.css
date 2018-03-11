@@ -230,3 +230,9 @@ td.questionPage {
 	border: 0px solid black;
 	text-align: center;
 }
+
+input.questionPage{
+	width: 20%;
+	margin: 0 auto;
+	display: block;
+}
