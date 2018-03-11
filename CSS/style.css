@@ -220,3 +220,13 @@ td {
 	border: 1px solid black;
 	text-align: center;
 }
+
+
+table.questionPage, th.questionPage {
+	border: 0px solid black;
+}
+
+td.questionPage {
+	border: 0px solid black;
+	text-align: center;
+}
