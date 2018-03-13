@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+		<script rel="javascript" type="text/javascript" src="../JS/JavaScripts.js"></script>
+	</head>
+	<body>
+		<div id="content">
+		
+			<ul>
+			
+				<li><a href="../HTML/Homepage.html">Home</a></li>
+				<li><a href="../HTML/profile.html">View Profile</a></li>
+				<li><a href="../HTML/questionPage.html">Category</a></li>
+				<li><a class="active" href="../HTML/CreateCategory.html">Admin</a></li>
+				<li style="float:right"><a href="#logout">Log out</a></li>
+			</ul>
+			
+		</div>
+		
+		<div id="container">
+		
+		
+			<h2>Add Questions</h2>
+			
+			<ul>
+				<li><a href="../HTML/CreateCategory.html">Create New Category</a></li>
+				<li><a class="active" href="../HTML/AddQuestion.html">Add New Questions</a></li>
+				<li><a href="../HTML/DeleteCategory.html">Delete Category</a></li>
+				<li><a href="../HTML/DeleteQuestion.html">Delete Question</a></li>
+				<li><a href="../HTML/EditQuestion.html">Edit Question</a></li>
+			</ul>
+			
+			<br>
+			<form action="/action_page.php">
+			<label for="SelectCategory">Select Category</label><br>
+			<input list="Categories" name="Categories">
+			<datalist id="Categories"></datalist>
+			<br>
+			<label for="NameQuestion">Name of Question</label><br>
+			<input type="text" id="NameQuestion" name="NameQuestion" value="Cars"><br>
+			<label for="Answer1">Answer1</label><br>
+			<input type="text" id="Answer1" name="Answer1" value="Audi">
+			<input type="checkbox" id="cAnswer1" class="cAnswer1" name="Answer1">
+			<br>
+			<label for="Answer2">Answer2</label><br>
+			<input type="text" id="Answer2" name="Answer2" value="Ford">
+			<input type="checkbox" id="cAnswer2" class="cAnswer2" name="Answer2">
+			<br>
+			<label for="Answer3">Answer3</label><br>
+			<input type="text" id="Answer3" name="Answer3" value="BMW">
+			<input type="checkbox" id="cAnswer3" class="cAnswer3" name="Answer3">
+			<br>
+			<label for="Answer4">Answer4</label><br>
+			<input type="text" id="Answer4" name="Answer4" value="Mini">
+			<input type="checkbox" id="cAnswer4" class="cAnswer4" name="Answer4">
+			<br>
+			<label>Tick the box which is the answer</label>
+			<br><br>
+			<input type="submit" value="Save changes">
+			</form>
+			
+		</div>
+		
+	</body>
+</html>
