@@ -25,52 +25,49 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `question`
+-- Table structure for table `quizscore`
 --
 
-CREATE TABLE `question` (
-  `questionID` int(11) NOT NULL,
-  `questionName` varchar(50) NOT NULL,
-  `categoryID` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `question`
---
-
-INSERT INTO `question` (`questionID`, `questionName`, `categoryID`) VALUES
-(1, 'John', NULL);
+CREATE TABLE `quizscore` (
+  `QuizID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
+  `CategoryID` int(11) NOT NULL,
+  `Score` int(11) NOT NULL,
+  `Date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `question`
+-- Indexes for table `quizscore`
 --
-ALTER TABLE `question`
-  ADD PRIMARY KEY (`questionID`),
-  ADD KEY `categoryID` (`categoryID`);
+ALTER TABLE `quizscore`
+  ADD PRIMARY KEY (`QuizID`),
+  ADD KEY `quizscore_ibfk_1` (`UserID`),
+  ADD KEY `quizscore_ibfk_2` (`CategoryID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `question`
+-- AUTO_INCREMENT for table `quizscore`
 --
-ALTER TABLE `question`
-  MODIFY `questionID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `quizscore`
+  MODIFY `QuizID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
 --
 
 --
--- Constraints for table `question`
+-- Constraints for table `quizscore`
 --
-ALTER TABLE `question`
-  ADD CONSTRAINT `FK_CategoryID` FOREIGN KEY (`categoryID`) REFERENCES `category` (`categoryID`);
+ALTER TABLE `quizscore`
+  ADD CONSTRAINT `quizscore_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `user` (`UserID`),
+  ADD CONSTRAINT `quizscore_ibfk_2` FOREIGN KEY (`CategoryID`) REFERENCES `category` (`categoryID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

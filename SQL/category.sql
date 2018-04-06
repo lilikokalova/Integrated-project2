@@ -25,52 +25,33 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `question`
+-- Table structure for table `category`
 --
 
-CREATE TABLE `question` (
-  `questionID` int(11) NOT NULL,
-  `questionName` varchar(50) NOT NULL,
-  `categoryID` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `question`
---
-
-INSERT INTO `question` (`questionID`, `questionName`, `categoryID`) VALUES
-(1, 'John', NULL);
+CREATE TABLE `category` (
+  `categoryID` int(11) NOT NULL,
+  `categoryName` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `question`
+-- Indexes for table `category`
 --
-ALTER TABLE `question`
-  ADD PRIMARY KEY (`questionID`),
-  ADD KEY `categoryID` (`categoryID`);
+ALTER TABLE `category`
+  ADD PRIMARY KEY (`categoryID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `question`
+-- AUTO_INCREMENT for table `category`
 --
-ALTER TABLE `question`
-  MODIFY `questionID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `question`
---
-ALTER TABLE `question`
-  ADD CONSTRAINT `FK_CategoryID` FOREIGN KEY (`categoryID`) REFERENCES `category` (`categoryID`);
+ALTER TABLE `category`
+  MODIFY `categoryID` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
