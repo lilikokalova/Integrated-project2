@@ -3,7 +3,7 @@ require 'dbConnect.php';
 session_start();
 $uname = $mysqli->escape_string($_POST['username']);
 
-$result = $mysqli->query("SELECT * FROM users WHERE username='$uname'");
+$result = $mysqli->query("SELECT * FROM user WHERE username='$uname'");
 
 if ($result->num_rows == 0){
 		$_Session['Message'] = "This username does not exsist";
