@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 06, 2018 at 10:10 PM
+-- Generation Time: Apr 08, 2018 at 05:23 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -39,7 +39,11 @@ CREATE TABLE `question` (
 --
 
 INSERT INTO `question` (`questionID`, `categoryID`, `questionName`) VALUES
-(1, NULL, 'John');
+(3, 1, 'What is the population of Africa?'),
+(4, 1, 'How many countries are there in Africa?'),
+(5, 1, 'What is the largest country in Africa?'),
+(6, 1, 'Which country has the largest mainland coastline?'),
+(7, 1, 'What is the largest city in Africa?');
 
 --
 -- Indexes for dumped tables
@@ -60,7 +64,7 @@ ALTER TABLE `question`
 -- AUTO_INCREMENT for table `question`
 --
 ALTER TABLE `question`
-  MODIFY `questionID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `questionID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables
