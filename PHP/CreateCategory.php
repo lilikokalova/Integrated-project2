@@ -27,11 +27,10 @@
 				<li><a href="../HTML/DeleteCategory.html">Delete Category</a></li>
 				<li><a href="../HTML/DeleteQuestion.html">Delete Question</a></li>
 				<li><a href="../HTML/EditQuestion.html">Edit Question</a></li>
-				
 			</ul>
-			<form action="/action_page.php" method="post">
+			<form action="AddACategory.php" method="post">
 			<label for="NameCategory">Name of Category</label><br>
-			<input type="text" id="NameCategory" name="NameCategory" value="Cars">
+			<input type="text" id="NameCategory" name="NameCategory">
 			<br><br>
 			<br><br>
 			<input type="submit" value="Save changes">
