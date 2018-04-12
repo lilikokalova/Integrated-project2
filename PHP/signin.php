@@ -14,11 +14,11 @@ if ($result->num_rows == 0){
 		
 		if(password_verify($_POST['password'], $user['password'])){
 			
-			 $_session['fname'] = $user['fname'];
-			 $_session['lname'] = $user['lname'];
-			 $_session['uname'] = $user['uname'];
+			 $_SESSION['fname'] = $user['firstName'];
+			 $_SESSION['lname'] = $user['lastName'];
+			 $_SESSION['uname'] = $user['userName'];
 			
-			header("location: ../PHP/AddQuestion.php");
+			header("location: ../PHP/Homepage.php");
 			
 			 
 			
