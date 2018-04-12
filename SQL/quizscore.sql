@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 08, 2018 at 06:45 PM
+-- Generation Time: Apr 12, 2018 at 08:23 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -32,7 +32,7 @@ CREATE TABLE `quizscore` (
   `quizID` int(11) NOT NULL,
   `userID` int(11) NOT NULL,
   `categoryID` int(11) NOT NULL,
-  `score` int(11) NOT NULL,
+  `score` decimal(11,0) NOT NULL,
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
